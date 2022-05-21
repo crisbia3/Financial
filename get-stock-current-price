@@ -1,0 +1,6 @@
+from yahoofinancials import YahooFinancials
+tag = input("Insert name of stock (e.g AAPL) : ")
+yf = YahooFinancials({tag})
+fetched_value = yf.get_current_price()
+output_fetched_value = f"The current price of the stock chosen {tag} in $ is : {fetched_value}"
+print(output_fetched_value)
